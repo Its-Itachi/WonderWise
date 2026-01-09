@@ -154,7 +154,7 @@ WonderWise/
 
 ## 👤 Author
 
-**Name**: Itachi Uchiha
+**Name**: Jayesh Dethe
 **GitHub**: [https://github.com/Its-Itachi](https://github.com/Its-Itachi)
 
 ---
