@@ -1,6 +1,3 @@
-Here’s an updated version of the README — with your **Streamlit Cloud deployment URL included**.
-
-````md
 # 🧭 WonderWise — Multi-Agent Travel Planner
 
 👉 **Live App**: https://wonderwise-k5hpmmu4feskczig9ktrko.streamlit.app/
