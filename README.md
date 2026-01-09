@@ -183,7 +183,3 @@ If you find this project useful:
 ---
 
 Happy building and exploring the world with agents 🌍🧠
-
-```
-::contentReference[oaicite:0]{index=0}
-```
