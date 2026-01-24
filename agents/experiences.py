@@ -1,11 +1,5 @@
-# ============================================================
-# agents/experiences.py
-# Experiences / Attractions Agent
-# ============================================================
-
 from dotenv import load_dotenv
-load_dotenv()  # MUST be loaded before ChatGroq
-
+load_dotenv() 
 from langchain_groq import ChatGroq
 from tools.google_search import google_search
 
@@ -16,7 +10,6 @@ def experiences_agent(state: dict) -> dict:
     based on user interests and destination city.
     """
 
-    # ✅ STABLE, SUPPORTED GROQ MODEL
     llm = ChatGroq(
         model="llama-3.1-8b-instant",
         temperature=0.1

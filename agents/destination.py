@@ -1,10 +1,5 @@
-# ============================================================
-# agents/destination.py
-# Destination Research Agent
-# ============================================================
-
 from dotenv import load_dotenv
-load_dotenv()  # MUST be before ChatGroq is imported/used
+load_dotenv()  
 
 from langchain_groq import ChatGroq
 from tools.google_search import google_search
@@ -19,7 +14,6 @@ def destination_agent(state: dict) -> dict:
     - Practical travel tips
     """
 
-    # ✅ STABLE, SUPPORTED GROQ MODEL
     llm = ChatGroq(
         model="llama-3.1-8b-instant",
         temperature=0

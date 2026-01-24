@@ -1,10 +1,5 @@
-# ============================================================
-# agents/itinerary.py
-# Itinerary Planning Agent
-# ============================================================
-
 from dotenv import load_dotenv
-load_dotenv()  # MUST be before ChatGroq
+load_dotenv()  
 
 from langchain_groq import ChatGroq
 
@@ -15,7 +10,6 @@ def itinerary_agent(state: dict) -> dict:
     a structured, day-by-day travel itinerary.
     """
 
-    # ✅ STABLE, SUPPORTED GROQ MODEL
     llm = ChatGroq(
         model="llama-3.1-8b-instant",
         temperature=0
