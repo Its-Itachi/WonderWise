@@ -1,9 +1,5 @@
-# ============================================================
-# app.py — WonderWise (Multi-Agent Travel Planner)
-# ============================================================
-
 from dotenv import load_dotenv
-load_dotenv()  # MUST be before any LLM usage
+load_dotenv() 
 
 import streamlit as st
 from datetime import date, timedelta
@@ -11,9 +7,9 @@ from datetime import date, timedelta
 from graph import build_graph
 
 
-# ============================================================
+
 # Page Configuration
-# ============================================================
+
 st.set_page_config(
     page_title="WonderWise",
     page_icon="🧭",
@@ -29,9 +25,9 @@ st.caption(
 st.divider()
 
 
-# ============================================================
+
 # Input Section
-# ============================================================
+
 with st.container(border=True):
     st.subheader("✍️ Travel Preferences")
 
@@ -49,9 +45,9 @@ with st.container(border=True):
     end_date = d2.date_input("End Date", date.today() + timedelta(days=5))
 
 
-# ============================================================
+
 # Validation
-# ============================================================
+
 travel_days = (end_date - start_date).days
 
 ready = (
@@ -75,9 +71,8 @@ else:
     )
 
 
-# ============================================================
 # Execution
-# ============================================================
+
 if st.button(
     "🧠 Generate Intelligent Travel Plan",
     use_container_width=True,
@@ -114,9 +109,8 @@ if st.button(
         )
 
 
-# ============================================================
 # Footer
-# ============================================================
+
 st.divider()
 st.caption(
     "WonderWise • Multi-Agent AI using LangGraph + Groq "
